@@ -1,70 +1,56 @@
-[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
+# Gazi Shop - Fully Customizable WordPress WooCommerce Theme
 
-_s
-===
+![Gazi_Shop_WordPress_Theme](https://github.com/user-attachments/assets/7b0710f9-0305-4491-9f05-ae6ecafad954)
 
-Hi. I'm a starter theme called `_s`, or `underscores`, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Welcome to **Gazi Shop**, a fully responsive and customizable WordPress theme designed specifically for WooCommerce. This theme is built with flexibility in mind, allowing users to easily customize various aspects of their online store, from the header to the footer, using the WordPress theme customizer.
 
-My ultra-minimal CSS might make me look like theme tartare but that means less stuff to get in your way when you're designing your awesome theme. Here are some of the other more interesting things you'll find here:
+## Theme Features
 
-* A modern workflow with a pre-made command-line interface to turn your project into a more pleasant experience.
-* A just right amount of lean, well-commented, modern, HTML5 templates.
-* A custom header implementation in `inc/custom-header.php`. Just add the code snippet found in the comments of `inc/custom-header.php` to your `header.php` template.
-* Custom template tags in `inc/template-tags.php` that keep your templates clean and neat and prevent code duplication.
-* Some small tweaks in `inc/template-functions.php` that can improve your theming experience.
-* A script at `js/navigation.js` that makes your menu a toggled dropdown on small screens (like your phone), ready for CSS artistry. It's enqueued in `functions.php`.
-* 2 sample layouts in `sass/layouts/` made using CSS Grid for a sidebar on either side of your content. Just uncomment the layout of your choice in `sass/style.scss`.
-Note: `.no-sidebar` styles are automatically loaded.
-* Smartly organized starter CSS in `style.css` that will help you to quickly get your design off the ground.
-* Full support for `WooCommerce plugin` integration with hooks in `inc/woocommerce.php`, styling override woocommerce.css with product gallery features (zoom, swipe, lightbox) enabled.
-* Licensed under GPLv2 or later. :) Use it to make something cool.
+- **100% Responsive**  
+  Ensure your website looks great on all devices with a fully responsive design.
 
-Installation
----------------
+- **WooCommerce Compatible**  
+  Seamless integration with WooCommerce for easy product management and sales.
 
-### Requirements
+- **Ajax Product Search**  
+Advanced Woo Search integration allows for fast, real-time product searches with AJAX.
 
-`_s` requires the following dependencies:
+- **Fully Customizable**  
+  Modify the look and feel of your website through the WordPress theme customizer without writing any code. Customizable options include:
+  - Header top section
+  - Logo
+  - Carousel images
+  - Homepage banner image and text
+  - Footer columns
+  - Footer copyright text, and more!
 
-- [Node.js](https://nodejs.org/)
-- [Composer](https://getcomposer.org/)
+## Required Plugins
 
-### Quick Start
+To take full advantage of Gazi Shop’s features, make sure the following plugins are installed and activated:
 
-Clone or download this repository, change its name to something else (like, say, `megatherium-is-awesome`), and then you'll need to do a six-step find and replace on the name in all the templates.
+- [WooCommerce](https://wordpress.org/plugins/woocommerce/)  
+  A powerful and customizable eCommerce platform for WordPress.
 
-1. Search for `'_s'` (inside single quotations) to capture the text domain and replace with: `'megatherium-is-awesome'`.
-2. Search for `_s_` to capture all the functions names and replace with: `megatherium_is_awesome_`.
-3. Search for `Text Domain: _s` in `style.css` and replace with: `Text Domain: megatherium-is-awesome`.
-4. Search for <code>&nbsp;_s</code> (with a space before it) to capture DocBlocks and replace with: <code>&nbsp;Megatherium_is_Awesome</code>.
-5. Search for `_s-` to capture prefixed handles and replace with: `megatherium-is-awesome-`.
-6. Search for `_S_` (in uppercase) to capture constants and replace with: `MEGATHERIUM_IS_AWESOME_`.
+- [Advanced Woo Search](https://wordpress.org/plugins/advanced-woo-search/)  
+  An advanced AJAX-powered search solution for WooCommerce products.
 
-Then, update the stylesheet header in `style.css`, the links in `footer.php` with your own information and rename `_s.pot` from `languages` folder to use the theme's slug. Next, update or delete this readme.
+## Installation
 
-### Setup
+1. Download or clone this repository to your WordPress themes directory (`/wp-content/themes/`).
+2. Activate the theme through the WordPress Dashboard under `Appearance > Themes`.
+3. Install the required plugins listed above if not already installed and activated.
+4. Use the WordPress customizer to adjust the theme settings to match your store's branding.
 
-To start using all the tools that come with `_s`  you need to install the necessary Node.js and Composer dependencies :
+## Customization & Support
 
-```sh
-$ composer install
-$ npm install
-```
+For additional customization or if you need help setting up the theme, feel free to contact me:
 
-### Available CLI commands
+- **Email:** [mofizul21@gmail.com](mailto:mofizul21@gmail.com)
+- **Website:** [https://mofizul.com](https://mofizul.com)
 
-`_s` comes packed with CLI commands tailored for WordPress theme development :
+I'm available to assist you with any customizations or enhancements you may need to make the theme perfect for your store. I'm a web developer with 13 years of experience. So you can contact me about any web-related issues. 
 
-- `composer lint:wpcs` : checks all PHP files against [PHP Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/).
-- `composer lint:php` : checks all PHP files for syntax errors.
-- `composer make-pot` : generates a .pot file in the `languages/` directory.
-- `npm run compile:css` : compiles SASS files to css.
-- `npm run compile:rtl` : generates an RTL stylesheet.
-- `npm run watch` : watches all SASS files and recompiles them to css when they change.
-- `npm run lint:scss` : checks all SASS files against [CSS Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/css/).
-- `npm run lint:js` : checks all JavaScript files against [JavaScript Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/javascript/).
-- `npm run bundle` : generates a .zip archive for distribution, excluding development and system files.
+## Customizable Options
+![Gazi_shop_theme_customizer](https://github.com/user-attachments/assets/1a2dae7c-d733-4039-9e4e-13a9d617a099)
 
-Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
 
-Good luck!
